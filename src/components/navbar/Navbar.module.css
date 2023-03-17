@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    gap: 1.67rem;
+    list-style: none;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}
