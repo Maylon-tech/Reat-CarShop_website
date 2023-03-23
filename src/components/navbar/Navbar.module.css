@@ -9,4 +9,9 @@
     font-weight: bold;
     text-decoration: none;
     color: #222;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    color: #c6326e;
+    transition: .4s;
 }

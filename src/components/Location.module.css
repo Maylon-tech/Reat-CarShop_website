@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    max-width: 1380px;
+    margin: auto;
+    background-color: rgba(196, 190, 190, 0.722);
+    display: grid;
+    place-items: center;
+}
+
+.location_map {
+    border: 2px solid white;
+    width: 750px;
+    height: 320px;
+}

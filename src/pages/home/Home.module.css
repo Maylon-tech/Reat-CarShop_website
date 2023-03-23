@@ -1,19 +1,207 @@
+section {
+    max-width: 1380px;
+    margin: auto;
+}
+
 .home {
     height: 100vh;
     display: grid;
+    grid-template-columns: repeat(2, 2fr);
     place-items: center;
+    border: 3px solid #222;
+
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('../../assets/images/Home\ BG.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.home h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+.home h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: center;
+    margin: 2.7rem 0;
+}
+.home button {
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #c6326e;
+    color: #eee;
+    font-weight: bold;
+    width: 180px;
+}
+.home button:hover {
+    background-color: #c6326de3;
+    transition: .4s;
+}
+.home .buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.home .left_content {
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+.home .right_content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 2.8rem;
+    row-gap: 2.8rem;
+}
+.home .right_content .brand_content {
+    padding: 1rem;
+    margin: auto;
+    background-color: #534e4e90;
+    border-radius: 5px;
+    width: 200px;
+    transition: .4s;
+    display: grid;
+    place-items: center;
+}
+.home .right_content .brand {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+    padding-bottom: .5rem;
+}
+.home .right_content .brand_content:hover {
+    background-color: #635f5f9c;
+}
+.home .right_content .brand_content:hover .brand {
+    color: #c6326e;
+}
+
+/*  About Section  */
 
 .about {
     height: 100vh;
     display: grid;
+    grid-template-columns: repeat(2, 2fr);
     place-items: center;
 }
 
+.about .content_info h1 {
+    font-size: 2rem;
+}
 
-.gallery {
-    height: 100vh;
+.about .content_info p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}   
+
+.about .social_links {
+    margin: 20px;
+    margin: 3rem 0;
+}
+.about .social_links ol {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+}
+.about .social_links ol li {
+    width: 60px;
+    height: 60px;
+    padding: .7rem;
+    border-radius: 50%;
+    border: 1px solid #222;
     display: grid;
     place-items: center;
+    cursor: pointer;
+}
+.about .social_links ol li i {
+    font-size: 1.8rem;
+    transition: .3s ease;
+}
+
+.about .social_links ol li:hover i {
+    color: #c6326e;
+    transform: translateY(-6px);
+}
+
+
+.about .buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.about .buttons button {
+    padding: .7rem 1rem;
+    width: 200px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #c6326e;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.about .buttons button:hover {
+    background-color: #c03f72e6;
+}
+
+
+
+/*  Gallery Section  */
+
+.gallery {
+    height: 120vh;
+    max-width: 1200px;
+}
+
+.gallery h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.gallery .galeria_content {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    place-items: center;
+    row-gap: 2rem;
+    padding-top: 1.5rem;
+}
+
+.gallery .card {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: 3px solid #888;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .galeria_content .card .card_img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.gallery .galeria_content .card .car_img img {
+    width: 100%;
 }
