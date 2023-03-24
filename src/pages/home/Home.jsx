@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Home.module.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import AboutMain from '../../assets/images/About_main.png'
 import CardInfo from '../../components/CardInfo'
@@ -25,26 +25,31 @@ const Home = () => {
         </div>
 
         <div className={styles.right_content}>
-          <div className={styles.brand_content}>
+
+          <div className={styles.brand_content} onClick={() => navigate('toyota')} >
             <span className={styles.brand}>
               Toyota
             </span>
           </div>
-          <div className={styles.brand_content}>
+
+          <div className={styles.brand_content} onClick={() => navigate('honda')} >
             <span className={styles.brand}>
               Honda
             </span>
           </div>
-          <div className={styles.brand_content}>
+          
+          <div className={styles.brand_content} onClick={() => navigate('mitsubishi')} > 
             <span className={styles.brand}>
               Mitsubishi
             </span>
           </div>
-          <div className={styles.brand_content}>
+        
+          <div className={styles.brand_content} onClick={() => navigate('nissan')} >
             <span className={styles.brand}>
               Nissan
             </span>
           </div>
+
         </div>
       </section>
 

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Honda = () => {
+const Toyota = () => {
   return (
     <div style={{ height:'100vh', display:'grid', placeItems:'center'}}>
-        <h1>Honda Page render</h1>
+        <h1>Toyota Page Render</h1>
     </div>
   )
 }
 
-export default Honda
+export default Toyota
