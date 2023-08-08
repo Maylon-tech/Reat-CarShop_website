@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './TopHeader.module.css'
+import styles from './Header.module.css'
 
 const TopHeader = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.TopHeader}>
         <div className={styles.content}>
             <h3>
                 <i class="fa-solid fa-phone"></i>
