@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import AboutMain from '../../assets/images/About_main.png'
 import CardInfo from '../../components/CardInfo'
-
+import LogoHero from '../../assets/images/RR Motors LOGO.jpg'
 import CarDatas from '../../assets/datas/CarDatas'
 
 const Home = () => {
@@ -16,8 +16,9 @@ const Home = () => {
 
       <section id='home' className={styles.home}>
         <div className={styles.left_content}>
-          <h1>Carros Novos e Usados</h1>
-          <h3>Vem comprar seu carro conosco.</h3>
+          <div className={styles.logoImage}>
+            <img src={LogoHero} alt="imgLogo" />
+          </div>
           <div className={styles.buttons}>
             <button>Veja os Carros</button>
             <button>Sobre a Loja</button>
@@ -29,22 +30,16 @@ const Home = () => {
           <div className={styles.brand_content} onClick={() => navigate('toyota')} >
             <span className={styles.brand}>
               Toyota
-            </span>
-          </div>
+            </span>          
 
-          <div className={styles.brand_content} onClick={() => navigate('honda')} >
             <span className={styles.brand}>
               Honda
-            </span>
-          </div>
+            </span>                  
           
-          <div className={styles.brand_content} onClick={() => navigate('mitsubishi')} > 
             <span className={styles.brand}>
               Mitsubishi
             </span>
-          </div>
-        
-          <div className={styles.brand_content} onClick={() => navigate('nissan')} >
+          
             <span className={styles.brand}>
               Nissan
             </span>
