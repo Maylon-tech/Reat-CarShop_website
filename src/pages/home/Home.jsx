@@ -7,6 +7,11 @@ import CardInfo from '../../components/CardInfo'
 import LogoHero from '../../assets/images/RR Motors LOGO.jpg'
 import CarDatas from '../../assets/datas/CarDatas'
 
+import IconMitsubishi from '../../assets/logo-icons/icons8-mitsubishi-48.png'
+import IconToyota from '../../assets/logo-icons/icons8-toyota-48.png'
+import IconHonda from '../../assets/logo-icons/icons8-honda-50.png'
+import IconSubaru from '../../assets/logo-icons/icons8-subaru-50.png'
+
 const Home = () => {
   const navigate = useNavigate()
 
@@ -28,21 +33,25 @@ const Home = () => {
         <div className={styles.right_content}>
 
           <div className={styles.brand_content} onClick={() => navigate('toyota')} >
-            <span className={styles.brand}>
-              Toyota
-            </span>          
+            <div className={styles.brand_box}>
+              <img src={IconToyota} alt="" />
+              <span className={styles.brand}>Toyota</span> 
+            </div>         
 
-            <span className={styles.brand}>
-              Honda
-            </span>                  
+            <div className={styles.brand_box}>
+              <img src={IconHonda} alt="" />
+              <span className={styles.brand}>Honda</span> 
+            </div>                  
           
-            <span className={styles.brand}>
-              Mitsubishi
-            </span>
+            <div className={styles.brand_box}>
+              <img src={IconSubaru} alt="" />
+              <span className={styles.brand}>Subaru</span> 
+            </div>
           
-            <span className={styles.brand}>
-              Nissan
-            </span>
+            <div className={styles.brand_box}>
+              <img src={IconMitsubishi} alt="" />
+              <span className={styles.brand}>Mitsubishi</span> 
+            </div>
           </div>
 
         </div>

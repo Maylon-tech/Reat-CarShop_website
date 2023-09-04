@@ -49,6 +49,7 @@
     padding: .6rem 2rem;
     flex: 2;
     height: 100%;
+    border: 2px solid red;
 }
 
 .logo {
@@ -63,11 +64,15 @@
 }
 
 .menu {
-    font-size: 1.6rem;
+    
     width: 40px;
-    cursor: pointer;
 }
-
+.menu button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}
 
 /*  Navbar  */
 

@@ -1,0 +1,22 @@
+
+.wrapper-sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sidebar-content {
+    height: 100vh;
+    width: 300px;
+    background-color: aquamarine;
+}
+
+.sidebar-content h1 {
+    font-size: 2rem;
+    color: orange;
+    text-align: center;
+    padding: 1.6rem;
+}
