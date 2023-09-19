@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Home.module.css'
 import { Link, useNavigate } from 'react-router-dom'
 
-import AboutMain from '../../assets/images/About_main.png'
 import CardInfo from '../../components/CardInfo'
 import LogoHero from '../../assets/images/RR Motors LOGO.jpg'
 import CarDatas from '../../assets/datas/CarDatas'
@@ -11,10 +10,11 @@ import IconMitsubishi from '../../assets/logo-icons/icons8-mitsubishi-48.png'
 import IconToyota from '../../assets/logo-icons/icons8-toyota-48.png'
 import IconHonda from '../../assets/logo-icons/icons8-honda-50.png'
 import IconSubaru from '../../assets/logo-icons/icons8-subaru-50.png'
+import About from '../../components/layout/About'
+
 
 const Home = () => {
   const navigate = useNavigate()
-
 
   return (
     <main className={styles.homePage}>
@@ -57,61 +57,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id='about' className={styles.about}>
-        <div className={styles.image}>
-          <img src={AboutMain} alt="" />
-        </div>
-
-        <div className={styles.content_info}>
-
-          <h1>Sobre a Loja</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam consectetur hic porro non harum! Modi odit placeat, facere suscipit
-             quod voluptate veritatis itaque iusto quas, id consectetur voluptatem praesentium!
-          </p>
-
-          <div className={styles.social_links}>
-            <ol>
-              <li>
-                <i class="fa-brands fa-facebook-f"></i>
-              </li>
-              <li>
-                <i class="fa-brands fa-instagram"></i>
-              </li>
-              <li>
-                <i class="fa-brands fa-whatsapp"></i>
-              </li>
-            </ol>
-          </div>
-
-          <div className={styles.buttons}>
-            <button onClick={() => navigate('/location')}>Localizacao</button>
-            <button onClick={() => navigate('/contato')}>Contatos</button>
-          </div>
-        </div>
-
-        <div className={styles.services}>
-          <div>
-            <i class="fa-solid fa-check-to-slot"></i>
-            <p>
-              Financiamento de fácil aprovação
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-check-to-slot"></i>
-            <p>
-              Sem visto permanente | Sem Hoshonin
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-check-to-slot"></i>
-            <p>
-              Carros novos | semi novos | usados
-            </p>
-          </div>
-        </div>
-
-      </section>
+      <About />
 
       <section id='gallery' className={styles.gallery}>
 

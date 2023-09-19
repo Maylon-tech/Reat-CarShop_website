@@ -1,0 +1,71 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.about .content_info h1 {
+    font-size: 2rem;
+}
+
+.about .content_info p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}   
+
+.about .social_links {
+    margin: 20px;
+    margin: 3rem 0;
+}
+.about .social_links ol {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+}
+.about .social_links ol li {
+    width: 60px;
+    height: 60px;
+    padding: .7rem;
+    border-radius: 50%;
+    border: 1px solid #222;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.about .social_links ol li i {
+    font-size: 1.8rem;
+    transition: .3s ease;
+}
+
+.about .social_links ol li:hover i {
+    color: #c6326e;
+    transform: translateY(-6px);
+}
+
+
+.about .buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.about .buttons button {
+    padding: .7rem 1rem;
+    width: 200px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #c6326e;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.about .buttons button:hover {
+    background-color: #c03f72e6;
+}
